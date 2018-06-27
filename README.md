@@ -1,4 +1,4 @@
-# Angular 6 Regres Project
+# Angular 6 Example Api Client App
 Angular 6 Regres Api example project.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
@@ -70,11 +70,13 @@ Example For Arabic.
 
 **3.** add the language option to the `language` object in the `app/common/global.ts` file.
 
-
+`
 languages : [{value: 'en', text: "English"},
                  {value: 'tr', text: "Türkçe"},
-                 `{value: 'ar', text: "Arabic"}`
+                 **{value: 'ar', text: "Arabic"}**
                  ]
+                 `
+
 
 
 #### Also Look
