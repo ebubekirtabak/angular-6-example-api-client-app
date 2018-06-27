@@ -68,14 +68,15 @@ Example For Arabic.
     }
 }```
 
+
 **3.** add the language option to the `language` object in the `app/common/global.ts` file.
 
-`
-languages : [{value: 'en', text: "English"},
+
+```languages : [{value: 'en', text: "English"},
                  {value: 'tr', text: "Türkçe"},
                  **{value: 'ar', text: "Arabic"}**
-                 ]
-                 `
+                 ]```
+ 
 
 
 
