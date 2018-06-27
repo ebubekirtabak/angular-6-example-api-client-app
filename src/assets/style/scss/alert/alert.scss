@@ -1,0 +1,44 @@
+$danger-color: #d75949;
+$white: #FFF;
+$grey-box-shadow-color:#757575;
+
+.alert {
+  &__wrapper {
+    position: fixed;
+    float: right;
+    top: 65px;
+    right: 25px;
+    z-index: 1080;
+  }
+
+  &__notification {
+    @include animation-name(swingInTop);
+    @include animation-duration(1s);
+    @include animation-iteration-count(unset);
+    @include animation-direction(linear);  
+    margin-top:20px;
+    position: relative;
+    animation-duration: .7s;
+    border-radius: 4px;
+    padding: 4px 8px;
+    max-width: 350px;
+    font-size: 12px;
+
+    &.warning {
+      background-color: $danger-color;
+      color: $white;
+      box-shadow: 3px 2px 18px -2px $grey-box-shadow-color;
+    }
+
+    &.success {
+      background-color: $success-color;
+      color: $white;
+      box-shadow: 3px 2px 18px -2px $grey-box-shadow-color;
+    }
+
+    &__header {
+      font-size: 18px;
+    }
+  }
+
+}

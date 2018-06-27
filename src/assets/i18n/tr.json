@@ -1,0 +1,26 @@
+{
+    "title":"hoşgeldiniz",
+    "email_address":"E-posta Adresi",
+    "enter_email":"E-posta Adresi Girin",
+    "password":"Parola",
+    "enter_password":"Parola Girin",
+    "login_text":"Giriş Yap",
+    "edit_user": "Kullanıcıyı Düzenle",
+    "delete_user": "Kullanıcıyı Sil",
+    "create_user": "Kullanıcı Oluştur",
+    "app_name": "Regres Uygulaması",
+    "app_language": "Ugulama Dili",
+    "name": "Ad",
+    "job": "İş",
+    "close": "Kapat",
+    "back": "Geri",
+    "save": "Kaydet",
+    "login": "Giriş Yap",
+    "ok": "Tamam",
+    "users": "Kullanıcılar",
+    "user_type": "Kullanıcı Tipi",
+    "logout": "Çıkış Yap",
+    "login":{
+        "title":"Giriş Yap"
+    }
+}

@@ -1,0 +1,17 @@
+<nav-bar></nav-bar>
+<div class="container user__content">
+  <div class="row">
+    <div class="col-sm-6 col-md-4" *ngFor="let user of userList">
+      <div class="card user__content__card" >
+        <img class="card-img-top" src="{{user.avatar}}" alt="{user.first_name}} {{user.last_name}}">
+        <div class="card-body">
+          <div class="card-body">
+            <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
+            <button class="btn btn-primary" (click)="editUser(user)" *ngIf="userSettings.user_type == 'admin'">{{ 'edit_user' | translate }}</button>
+            <button class="btn btn-danger"  (click)="onDeleteClick(user)" *ngIf="userSettings.user_type == 'admin'">{{ 'delete_user' | translate }}</button>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>

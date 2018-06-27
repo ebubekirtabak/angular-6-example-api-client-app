@@ -1,0 +1,26 @@
+{
+    "title":"welcome",
+    "email_address":"Email address",
+    "enter_email":"Enter email",
+    "password":"Password",
+    "enter_password":"Enter password",
+    "login_text":"Login",
+    "edit_user": "Edit User",
+    "delete_user": "Delete User",
+    "create_user": "Create User",
+    "app_name": "Regres App",
+    "app_language": "App Language",
+    "name": "Name",
+    "job": "Job",
+    "close": "Close",
+    "back": "Back",
+    "save": "Save",
+    "login": "Login",
+    "ok": "Ok",
+    "users": "Users",
+    "user_type": "User Type",
+    "logout": "Logout",
+    "login":{
+        "title":"Login"
+    }
+}

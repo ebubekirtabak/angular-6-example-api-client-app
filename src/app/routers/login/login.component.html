@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm"></div>
+      <div class="col-sm login__content">
+          <div class="card">
+            <div class="card-body">
+             <div class="login__content-form"> 
+               <form (ngSubmit)="loginApp()">
+                  <h2>{{ 'login.title' | translate }}</h2>
+                  <div class="form-group">
+                   <label for="email_input">{{ 'email_address' | translate }}</label>
+                   <input type="email" class="form-control" name="email" id="email_input" [(ngModel)]="emailInput" placeholder="{{ 'enter_email' | translate }}" required>
+                  </div>
+                  <div class="form-group">
+                   <label for="password_input">{{ 'password' | translate }}</label>
+                   <input type="password" class="form-control" name="password" id="password_input" [(ngModel)]="passwordInput" placeholder="{{ 'password' | translate }}" required>
+                  </div>
+                  <div class="form-group">
+                   <label for="app_language">{{ 'app_language' | translate }}</label>
+                   <select id="app_language" class="form-control" (change)="onChangeLanguage($event.target.value)">
+                    <option value="{{ lang.value }}" *ngFor="let lang of languages">{{ lang.text }}</option>
+                   </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="user_typee">{{ 'user_type' | translate }}</label>
+                    <select id="user_type" class="form-control" (change)="onChangeUserType($event.target.value)">
+                      <option value="{{ utype.val }}" *ngFor="let utype of userTypes">{{ utype.text }}</option>
+                    </select>
+                  </div>    
+                  <div class="alert alert-light" role="alert">
+                     {{ errorMessage }}
+                   </div>
+                 <button type="submit" class="btn btn-primary">{{ 'login_text' | translate }}</button>
+               </form>
+             </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm"></div>
+    </div>
+</div>

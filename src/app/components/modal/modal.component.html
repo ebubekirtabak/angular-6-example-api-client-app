@@ -1,0 +1,15 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">{{modalData.title}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('onDismiss')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>{{modalData.body}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal"  (click)="c('onDismiss')">{{ 'close' | translate }}</button>
+    <button type="button" class="btn btn-primary" (click)="c('onConfirm')">{{ 'ok' | translate }}</button>
+  </div>
+</ng-template>

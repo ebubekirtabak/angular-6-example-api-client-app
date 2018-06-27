@@ -1,0 +1,10 @@
+.user{
+    &__content {
+    margin-top: 5rem;
+        &__card {
+            .btn {
+                margin-right: 5px;
+            }
+        }
+    }
+}

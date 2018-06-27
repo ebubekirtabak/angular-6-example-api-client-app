@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+       <div class="card">
+          <div class="card-header">
+              <a [routerLink]="['/user']" class="btn btn-link">{{ 'back' | translate }}</a> 
+              {{ 'edit_user' | translate }}
+          </div>
+          <div class="card-body">
+           <form (ngSubmit)="updateUser()">
+             <div class="row">
+               <div class="col">
+                 <input type="text" class="form-control" name="name" id="name_input" [(ngModel)]="nameInput" placeholder="{{'name' | translate}}">
+               </div>
+               <div class="col">
+                 <input type="text" class="form-control" name="job"  id="job_input"  [(ngModel)]="jobInput" placeholder="{{'job' | translate}}">
+               </div>
+             </div>
+             <div class="alert alert-light" role="alert">
+                {{ errorMessage }}
+              </div>
+             <button type="submit" class="btn btn-primary">{{ 'save' | translate }}</button>
+           </form>
+          </div>
+       </div>
+    </div>
+  </div>
+</div>
