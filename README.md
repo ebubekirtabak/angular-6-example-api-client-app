@@ -1,3 +1,6 @@
+
+![Angular 6 Example Api Client App](https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/full/angular2.png)
+
 # Angular 6 Example Api Client App
 Angular 6 Regres Api example project.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
