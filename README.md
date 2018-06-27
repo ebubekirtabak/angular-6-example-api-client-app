@@ -1,5 +1,5 @@
 
-![Angular 6 Example Api Client App](https://i0.wp.com/code4developers.com/wp-content/uploads/2017/06/angular-2.png?fit=240%2C240&ssl=1)
+<img align="center" height="260" src="https://i0.wp.com/code4developers.com/wp-content/uploads/2017/06/angular-2.png?fit=240%2C240&ssl=1">
 
 # Angular 6 Example Api Client App
 Angular 6 Regres Api example project.
